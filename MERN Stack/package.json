@@ -1,0 +1,32 @@
+{
+  "name": "projectserver",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node ./bin/www",
+    "server": "nodemon ./bin/www",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "dependencies": {
+    "concurrently": "^4.1.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "express-session": "^1.15.6",
+    "http-errors": "~1.6.2",
+    "jade": "~1.11.0",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.1.7",
+    "mongoose-currency": "^0.2.0",
+    "mongoose-dateonly": "^1.0.6",
+    "morgan": "~1.9.0",
+    "nodemon": "^1.18.9",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^5.0.1",
+    "session-file-store": "^1.2.0"
+  }
+}
